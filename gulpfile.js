@@ -10,15 +10,15 @@ gulp.task('watch', function(){
   // second argument is an array of tasks to run
   // * is telling gulp to watch every file
   // in the folder with an extension of .less
-  gulp.watch(['./styles/*.less'], ['compillle-less'])
+  gulp.watch(['./server/public/styles/*.less'], ['compile-less'])
 })
 
 gulp.task('compile-less', function(){
   // ./ starts you at the same level as whatever
   // file you are in
-  gulp.src('./styles/style.less')
+  gulp.src('./server/public/styles/style.less')
   .pipe(less())
-  .pipe(gulp.dest('./styles/'))
+  .pipe(gulp.dest('./server/public/styles/'))
 })
 
 

@@ -12,6 +12,5 @@
     "gulp": "^3.9.1",
     "gulp-watch": "^4.3.11"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
